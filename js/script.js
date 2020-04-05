@@ -161,7 +161,7 @@ function tacWinner(){
         document.body.removeEventListener('click', condition);
     }else if(box3.classList[2] == "tac" && box6.classList[2] == "tac" && box9.classList[2] == "tac"){
         // alert("Нолики выиграли");
-        box1.classList.add('redBg');
+        box3.classList.add('redBg');
         box6.classList.add('redBg');
         box9.classList.add('redBg');
         tacCounter.innerHTML++;
