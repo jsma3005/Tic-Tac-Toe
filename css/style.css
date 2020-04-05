@@ -1,0 +1,408 @@
+body{
+    padding: 20px 200px;
+    position: relative;
+    padding-top: 20px !important;
+}
+.row{
+    z-index: 2;
+}
+.logo, .create, .brand{
+    position: relative;
+}
+.logo img{
+    width: 1000px !important;
+}
+.create img{
+    width: 600px;
+}
+.brand img{
+    width: 200px;
+}
+.col-lg-4{
+    /* width: 100px !important; */
+    max-width: 30% !important;
+    height: 200px !important;
+    border: 1px solid black !important;
+    box-shadow: 0 0 5px rgba(0,0,0,0.8) !important;
+    padding: 50px !important;
+    text-align: center !important;
+    background-size: 100px !important;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+#counter_reset{
+    padding: 15px 60px !important;
+    font-size: 25px !important;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* .box1{
+    background: url('../img/circle-outline.png') center / cover no-repeat;
+    
+} */
+
+img{
+    width: 128px;
+}
+
+.ticbg{
+    background: url('../img/close.png') center / cover no-repeat;
+    transition:  .3s;
+}
+.tacbg{
+    background: url('../img/circle-outline.png') center / cover no-repeat;
+    transition: .3s;
+}
+.redBg{
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: .8s;
+}
+
+
+/* BOXES BORDERS */
+.box1{
+    border-top: none !important;
+    border-left: none !important;
+    /* border-top-left-radius: 20px; */
+}
+.box2{
+    border-top: none !important;
+}
+.box3{
+    border-top: none !important;
+    border-right: none !important;
+    /* border-top-right-radius: 20px; */
+}
+.box4{
+    border-left: none !important;
+}
+.box6{
+    border-right: none !important;
+}
+.box7{
+    border-left: none !important;
+    border-bottom: none !important;
+    /* border-bottom-left-radius: 20px; */
+}
+.box8{
+    border-bottom: none !important;
+}
+.box9{
+    border-right: none !important;
+    border-bottom: none !important;
+    /* border-bottom-right-radius: 20px; */
+}
+
+/* !!!!!!!!!!!!! */
+
+
+
+
+/* BTN STYLE */
+.reset{
+    position: relative;
+    padding: 20px 60px;
+    display: block;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    width: 220px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    border-radius: 5px;
+    text-align: center;
+}
+.reset span{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+.reset .liquid{
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 220px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+    transition: .5s;
+    animation: liquid 30s linear infinite;
+}
+
+@keyframes liquid{
+    0%{
+        background: #ff9966;
+    }
+    20%{
+        background: #ff5e62;
+    }
+    40%{
+        background: #00F260;
+    }
+    60%{
+        background: #0575E6;
+    }
+    80%{
+        background: #e1eec3;
+    }
+    100%{
+        background: #f05053;
+    }
+}
+.reset:hover .liquid{
+    top: -100px;
+}
+.reset .liquid:before,
+.reset .liquid:after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+.reset .liquid:before{
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+    animation: animate 5s linear infinite;
+}
+.reset .liquid:after{
+    border-radius: 40%;
+    background: rgba(20,20,20,0.5);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+
+/* !!!!!!!!! */
+
+
+@media screen and (max-width: 1500px){
+    .logo img{
+        width: 900px !important;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .logo img{
+        width: 800px !important;
+    }
+    body{
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .logo img{
+        width: 700px !important;
+    }
+    .flex{
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    .logo img{
+        width: 500px !important;
+    }
+    .create img{
+        width: 400px !important;
+    }
+    .reset{
+        padding: 20px 40px;
+        width: 195px;
+    }
+    #counter_reset{
+        padding: 15px 25px !important;
+        font-size: 20px !important;
+    }
+    .liquid{
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .logo img{
+        width: 400px !important;
+    }
+    body{
+        padding: 20px 50px !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .reset{
+        padding: 15px 35px !important;
+        width: 165px;
+    }
+    .reset span{
+        font-size: 16px;
+        letter-spacing: 6px;
+    }
+    .flex h1{
+        font-size: 30px !important;
+    }
+    .liquid{
+        width: 170px !important;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .logo img{
+        width: 300px !important;
+    }
+    .create img{
+        width: 300px;
+    }
+    .brand img{
+        width: 150px;
+    }
+    .flex h1{
+        font-size: 23px !important;
+    }
+    #counter_reset{
+        padding: 15px 20px !important;
+        font-size: 15px !important;
+    }
+    .reset{
+        padding: 15px 30px !important;
+        width: 140px !important;
+    }
+    .reset span{
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    .liquid{
+        width: 140px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .col-lg-4{
+        background-size: 80px !important;
+        height: 150px !important;
+    }
+}
+@media screen and (max-width: 470px){
+    .create img{
+        width: 250px !important;
+    }
+    .brand img{
+        width: 120px !important;
+    }
+    .col-lg-4{
+        background-size: 50px !important;
+        height: 120px;
+    }
+    .flex h1{
+        font-size: 20px !important;
+    }
+    #counter_reset{
+        font-size: 12px !important; 
+    }
+    .reset{
+        padding: 8px 25px !important;
+    }
+    .reset span{
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px){
+    /* #canvas-basic{
+        height: 120% !important;
+    } */
+    .create{
+        margin-top: 50px !important;
+    }
+    .brand{
+        margin-bottom: 50px !important;
+    }
+    .col-lg-4{
+        height: 80px !important;
+    }
+    #counter_reset{
+        font-size: 12px !important;
+        padding: 8px 15px !important;
+    }
+    .reset{
+        padding: 10px 15px !important;
+    }
+    .reset span{
+        letter-spacing: 0px !important;
+    }
+    body{
+        padding: 20px 30px !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .flex{
+        display: block;
+    }
+    #counter{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0px !important;
+    }
+    .reset{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 340px){
+    .logo img{
+        width: 250px !important;
+    }
+    body{
+        padding: 20px !important;
+    }
+    .row{
+        width: 90%;
+        margin: 0 auto !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0px !important;
+    }
+    .col-lg-4{
+        margin: 0px !important;
+        /* padding: 30px !important; */
+        /* width: 10px !important; */
+        height: 100px !important;
+    }
+}
+
+
+
+
+
+
+/* GRANIM JS */
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
